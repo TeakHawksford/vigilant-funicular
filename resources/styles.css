@@ -1,0 +1,483 @@
+/************************
+Global Styles
+************************/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	width: 100%;
+	text-align: center;
+}
+
+
+/**************************
+ Main Header Styles
+**************************/ 
+.main-header {
+	text-align: center;
+	padding: 1.5em;
+	background: #f2f2f2;
+}
+
+.name {
+	margin-top: 0;
+}
+
+.main-header li {
+	background-color: white;
+	padding: 1em 0;
+	margin: 0 auto 1em;
+	border-radius: 12px;
+	width: 90%;
+}
+
+.main-header a {
+	display: block;
+	text-decoration: none;
+}
+
+.container {
+	background-color: rgba(57,84,217,.7);
+	padding: 16px 0 3px;
+}
+
+.about_me {
+	padding: 3em 1em 2em;
+	font-family: 'Open Sans';
+	font-size: 1.25em;
+	font-weight: 300;
+}
+
+.goals {
+	margin-top: 35px;
+}
+
+
+/************************
+Main section 
+************************/
+.the-main {
+	background-color: rgba(241,161,161,.8);
+}
+
+.portfolio {
+	padding-top: 3.75em;
+	padding-bottom: 2.5em;
+}
+
+.portfolio h2 {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.work h2 {
+	font-size: 2em;
+	font-weight: 400;
+}
+
+.work {
+	margin-bottom: 4em;
+}
+
+.work p {
+	font-family: 'Open Sans';
+	margin: 0 auto;
+	width: 80%;
+	font-size: 1.25em;
+	font-weight: 300;
+}
+
+.calculator-page {
+	padding-bottom: 2.5em;
+}
+
+.skills {
+	font-family: 'Open Sans';
+	clear: both;
+}
+
+.skills h2 {
+	font-family: 'Open Sans';
+	font-weight: 900;
+	font-size: 2em;
+	text-decoration: underline;
+}
+
+#medical {
+	background-color: rgba(246,14,14,.3);
+	padding: 2em;
+	font-family: 'Open Sans';
+	margin: 0 auto;
+	font-size: 1.25em;
+	font-weight: 300;
+}
+
+#medical li {
+	margin-bottom: .7em;
+}
+
+#computer {
+	background-color: rgba(179,0,255,.3);
+	padding: 2em;
+	font-family: 'Open Sans';
+	margin: 0 auto;
+	font-size: 1.25em;
+	font-weight: 300;
+}
+
+#computer li {
+	margin-bottom: .7em;
+}
+
+#boats {
+	background-color: rgba(255,162,0,.3);
+	padding: 2em;
+	font-family: 'Open Sans';
+	margin: 0 auto;
+	font-size: 1.25em;
+	font-weight: 300;
+}
+
+#boats li {
+	margin-bottom: .7em;
+}
+
+/*************************
+Footer Styles
+*************************/
+.main-footer {
+	text-align: center;
+	background: #f2f2f2;
+	padding: 3em 0 1em;
+}
+
+.my-contact,
+.credits {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.my-contact {
+	padding-bottom: 4em;
+	line-height: 1.5;
+}
+
+.my-contact h3 {
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+.my-contact p {
+	font-family: 'Open Sans';
+	font-size: 1.25em;
+	font-weight: 300;
+}
+
+#chat {
+	margin-bottom: 40px;
+}
+
+.credits {
+	border-top: 1px solid black;
+	padding-top: 30px;
+}
+
+#footer-name {
+	float: left;
+}
+
+.hide {
+	display: none;
+}
+
+#to-top {
+	float: right;
+}
+
+.tablet-footer-nav {
+	display: none;
+}
+
+
+/************************
+Fluid Image Sizing
+************************/
+img {
+	max-width: 90%;
+}
+
+/************************
+Anchor Link Styles
+************************/
+a:link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(0,0,0);
+	font-weight: bold;
+	transition: all 1.5s;
+}
+
+#medical a {
+	text-transform: capitalize;
+}
+
+#computer a {
+	text-transform: capitalize;
+}
+
+#boats a {
+	text-transform: capitalize;
+}
+
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: rgb(212, 13, 13);
+	transform: scale(1.2);
+}
+
+
+
+/************************
+Sticky Footer
+************************/
+.wrapper {
+	min-height: calc(100vh - 517.25px)
+}
+
+
+
+
+
+
+
+/***************************
+MEDIA QUERIES : 768px
+***************************/
+
+@media (min-width: 768px) {
+	.main-header {
+		padding-bottom: 3em;
+	}
+
+	.name {
+		padding-top: 30px;
+		margin-bottom: 1em;
+	}
+
+	.main-nav {
+		margin: auto;
+	}
+
+	.main-nav li {
+		background-color: #f2f2f2;
+		width: 20%;
+		display: inline-block;
+		margin-top: -20px;
+		margin-right: 1em;
+		border-radius: 12px;
+	}
+
+	.main-nav li a {
+		padding: 2em;
+	}
+
+	.container {
+		margin-bottom: 4em;
+	}
+
+	.about_me {
+		margin-top: -70px;
+	}	
+
+	.profile-image {
+		float: right;
+		width: 40%;
+		padding-left: 2em;
+	}
+
+	.goals {
+		float: left;
+		width: 60%;
+		margin-top: 0;
+	}
+
+	.work:nth-child(even) {
+		float: left;
+		width: 50%;
+	}
+
+	.work:nth-child(odd) {
+		float: right;
+		width: 50%;
+	}
+
+	.realign {
+		position: relative;
+		width: 33.3333%;
+		height: 430px;
+		float: left;
+	}
+
+	.realign img {
+		margin: 0 auto;
+		position: absolute;
+		width: 60%;
+		height: 40%;
+	}
+
+	#ambulance {
+		bottom: 20px;
+		right: 45px;
+	}
+
+	#webdev {
+		bottom: 20px;
+		right: 45px;
+	}
+
+	#wood {
+		bottom: 20px;
+		right: 40px;
+	}
+
+	#to-top {
+		display: none;
+	}
+
+	.footer-nav {
+		display: flex;
+	}
+	
+	#footer-name {
+		margin-right: auto;
+	}
+
+	.hide {
+		align-self: center;
+	}
+
+	.tablet-footer-nav {
+		display: inline-block;
+		float: right;
+		margin-top: 1em;
+	}
+
+	.footer-nav li {
+		display: inline-block;
+		padding-left: 1em;
+	}
+}
+
+
+/***************************
+MEDIA QUERIES : 1024px
+***************************/
+
+@media (min-width: 1024px) {
+	.container {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.name {
+		float: left;
+		padding-top: 16px;
+		margin-left: 12px;
+	}
+
+	.main-nav {
+		float: right;
+		margin-bottom: 12px;
+		margin-right: -2.5em;
+		padding-top: 0;
+		width: 70%;
+	}
+
+
+	.main-nav li {
+		padding: 0 1em 0 0;
+		margin: 0 auto;
+	}
+
+	.main-nav li a {
+		margin-right: 1em;
+	}
+
+	.about_me {
+		margin-top: 1em;
+	}
+
+	.profile-image {
+		float: right;
+		width: 50%;
+	}
+
+	.goals {
+		float: left;
+		width: 50%;
+	}
+
+	.work {
+		max-width: 33%;
+	}
+
+	.work:nth-child(3n+0) {
+		float: left;
+	}
+
+	.work:nth-child(3n+2) {
+		float: left;
+	}
+
+	#ambulance {
+		bottom: 20px;
+		right: 80px;
+	}
+
+	#webdev {
+		bottom: 20px;
+		right: 80px;
+	}
+
+	#wood {
+		bottom: 20px;
+		right: 80px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

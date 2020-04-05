@@ -1,0 +1,11 @@
+$brk-tablet: '(min-width: 768px)';
+$brk-desktop: '(min-width: 1024px)';
+
+$color-nav: rgb(57, 132, 243);
+$color-nav-comp: complement($color-nav);
+$color-white: rgb(255,255,255);
+$color-black: rgb(0,0,0);
+$color-main: rgb(238, 158, 158);
+$color-anchor: rgb(0, 0, 0);
+$color-anchor-hover: rgb(230, 0, 0);
+$color-anchor-visited: rgb(199, 11, 199);

@@ -1,0 +1,485 @@
+@import 'variables';
+@import 'normalize';
+
+/************************
+Global Styles
+************************/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.wrapper {
+	width: 100%;
+	text-align: center;
+}
+
+/************************
+Anchor Link Styles
+************************/
+a:link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $color-anchor;
+	font-weight: bold;
+	transition: all 1.5s;
+}
+
+a:visited {
+	color: $color-anchor-visited;
+}
+
+a:hover {
+	color: $color-anchor-hover;
+	transform: scale(1.2);
+}
+
+#medical a,
+#computer a,
+#boats a {
+	text-transform: capitalize;
+}
+
+
+/************************
+Fluid Image Sizing
+************************/
+img {
+	max-width: 90%;
+}
+
+
+/**************************
+ Main Header Styles
+**************************/ 
+.main-header {
+	text-align: center;
+	padding: 1.5em;
+	background: $color-white;
+	.name {
+		margin-top: 0;
+	}
+	li {
+		background-color: $color-nav-comp;
+		padding: 1em 0;
+		margin: 0 auto 1em;
+		border-radius: 12px;
+		width: 90%;
+		a {
+			display: block;
+			text-decoration: none;
+			color: $color-anchor;
+			&:hover {
+				color: $color-anchor-hover;
+			}
+		}
+	}
+}
+
+.container {
+	background-color: $color-nav;
+	padding: 16px 0 3px;
+}
+
+.about_me {
+	padding: 3em 1em 2em;
+	font-family: 'Open Sans';
+	font-size: 1.25em;
+	font-weight: 300;
+	.goals {
+		margin-top: 35px;
+	}
+}
+
+
+/************************
+Main section 
+************************/
+.the-main {
+	background-color: $color-main;
+}
+
+.portfolio {
+	padding-top: 3.75em;
+	padding-bottom: 2.5em;
+	h2 {
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+}
+
+.work {
+	margin-bottom: 4em;
+	h2 {
+		font-size: 2em;
+		font-weight: 400;
+	}
+	p {
+		font-family: 'Open Sans';
+		margin: 0 auto;
+		width: 80%;
+		font-size: 1.25em;
+		font-weight: 300;
+	}
+}
+
+.calculator-page {
+	padding-bottom: 2.5em;
+}
+
+.skills {
+	font-family: 'Open Sans';
+	clear: both;
+	h2 {
+		font-family: 'Open Sans';
+		font-weight: 900;
+		font-size: 2em;
+		text-decoration: underline;
+	}
+}
+
+
+#medical {
+	background-color: rgba(246,14,14,.3);
+	padding: 2em;
+	font-family: 'Open Sans';
+	margin: 0 auto;
+	font-size: 1.25em;
+	font-weight: 300;
+	li {
+		margin-bottom: .7em;
+	}
+}
+
+
+#computer {
+	background-color: rgba(179,0,255,.3);
+	padding: 2em;
+	font-family: 'Open Sans';
+	margin: 0 auto;
+	font-size: 1.25em;
+	font-weight: 300;
+	li {
+		margin-bottom: .7em;
+	}
+}
+
+
+#boats {
+	background-color: rgba(255,162,0,.3);
+	padding: 2em;
+	font-family: 'Open Sans';
+	margin: 0 auto;
+	font-size: 1.25em;
+	font-weight: 300;
+	li {
+		margin-bottom: .7em;
+	}
+}
+
+
+/*************************
+Footer Styles
+*************************/
+.main-footer {
+	background: #f2f2f2;
+	padding: 3em 0 1em;
+}
+
+.my-contact,
+.credits {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.my-contact {
+	padding-bottom: 4em;
+	line-height: 1.5;
+	h3 {
+		text-transform: uppercase;
+		margin-bottom: 50px;
+	}
+	p {
+	font-family: 'Open Sans';
+	font-size: 1.25em;
+	font-weight: 300;
+}
+}
+
+
+#chat {
+	margin-bottom: 40px;
+}
+
+.credits {
+	border-top: 1px solid black;
+	padding-top: 30px;
+}
+
+#footer-name {
+	float: left;
+	padding-left: 0;
+}
+
+.hide {
+	display: none;
+}
+
+#to-top {
+	float: right;
+}
+
+.tablet-footer-nav {
+	display: none;
+}
+
+
+
+/************************
+Sticky Footer
+************************/
+.wrapper {
+	min-height: calc(100vh - 517.25px)
+}
+
+
+
+
+
+
+
+/***************************
+MEDIA QUERIES : 768px
+***************************/
+
+
+	.main-header {
+		@media #{$brk-tablet} {
+			padding-bottom: 2em;
+		}
+	}
+
+	.name {
+		@media #{$brk-tablet} {
+			margin-bottom: 1em;
+		}
+	}
+
+
+	.container {
+		@media #{$brk-tablet} {
+			margin-bottom: 4em;
+			.main-nav {
+				margin: auto;
+				li {
+					background-color: $color-nav-comp;
+					width: 20%;
+					display: inline-block;
+					margin-top: -20px;
+					margin-right: 1em;
+					border-radius: 12px;
+					a {
+						padding: 2em;
+					}
+				}
+				#home:focus {
+					outline: none;
+				}
+			}
+		}
+}
+
+
+	.about_me {
+		@media #{$brk-tablet} {
+			display: flex;
+			align-items: center;
+			padding: 0;
+			.profile-image {
+				width: 40%;
+				padding-left: 2em;
+			}
+			.goals {
+				width: 60%;
+				align-self: flex-start;
+				order: -1;
+			}
+		}
+	}	
+
+
+
+	.work {
+		@media #{$brk-tablet} {
+			&:nth-child(even) {
+				float: left;
+				width: 50%;
+			}
+			&:nth-child(odd) {
+				float: right;
+				width: 50%;
+			}
+		}
+	}
+
+
+	.realign {
+		@media #{$brk-tablet} {
+			position: relative;
+			width: 33.3333%;
+			height: 430px;
+			float: left;
+			img {
+				margin: 0 auto;
+				position: absolute;
+				width: 60%;
+				height: 40%;
+			}
+		}	
+	}
+
+
+	#ambulance,
+	#webdev {
+		@media #{$brk-tablet} {
+			bottom: 20px;
+			right: 45px;
+		}
+	}
+
+	#wood {
+		@media #{$brk-tablet} {
+			bottom: 20px;
+			right: 40px;
+		}
+	}
+
+
+	.footer-nav {
+		@media #{$brk-tablet} {
+			display: flex;
+			#footer-name {
+				margin-right: auto;
+			}
+		}
+	}
+
+	#to-top {
+		@media #{$brk-tablet} {
+			display: none;
+		}
+	}
+
+	.hide {
+		@media #{$brk-tablet} {
+			align-self: center;
+		}
+	}
+
+	.footer-nav li {
+		@media #{$brk-tablet} {
+			display: inline-block;
+			padding-left: 1em;
+		}
+	}
+
+
+/***************************
+MEDIA QUERIES : 1024px
+***************************/
+
+// @media (min-width: 1024px) {
+	.container {
+		@media #{$brk-desktop} {
+		margin: 0 auto;
+			.name {
+				float: left;
+				padding-top: 30px;
+				margin-left: 12px;
+			}
+			.main-nav {
+				float: right;
+				margin-bottom: 12px;
+				margin-right: -2.5em;
+				padding-top: 0;
+				width: 70%;
+			li {
+				margin: 0 auto;
+				a {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+	}
+
+
+	.about_me {
+		@media #{$brk-desktop} {
+		margin-top: 1em;
+		.profile-image {
+			float: right;
+			width: 50%;
+		}
+		.goals {
+			float: left;
+			width: 50%;
+		}
+	}
+	}
+
+	.work {
+		@media #{$brk-desktop} {
+		max-width: 33%;
+		&:nth-child(3n+0) {
+			float: left;
+		}
+		&:nth-child(3n+2) {
+			float: left;
+		}
+	}
+	}
+
+
+
+	#ambulance,
+	#webdev,
+	#wood {
+		@media #{$brk-desktop} {
+		bottom: 20px;
+		right: 80px;
+		}
+	}
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
